@@ -1,28 +1,28 @@
-// I. Add Vote
+// AddVote
 export const AddVote = (uuid) => (dispatch) => {
   dispatch({
-    type: 'VOTE_MEM',
+    type: "VOTE_MEM",
     payload: {
       uuid,
     },
   });
 };
-// II. Down Vote
+// DownVote
 export const DownVote = (uuid) => (dispatch) => {
   dispatch({
-    type: 'DOWNVOTE_MEM',
+    type: "DOWNVOTE_MEM",
     payload: {
       uuid,
     },
   });
 };
 
-// III. Add Mem
+// AddMem
 export const AddMem =
   ({ uuid, title, mem_image }) =>
   (dispatch) => {
     dispatch({
-      type: 'ADD_MEM',
+      type: "ADD_MEM",
       payload: {
         uuid,
         title,

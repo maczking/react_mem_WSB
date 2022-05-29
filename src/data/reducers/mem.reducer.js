@@ -1,16 +1,16 @@
 const initialState = [
   {
     uuid: '5f045414-d54d-11ec-9d64-0242ac120002',
-    title: 'Testy', // title
+    title: 'Testy', 
     mem_image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZzT-56KLN4hetoz9TLOs2s202ex0wEC6IMg&usqp=CAU', //url
-    added_datetime: '2022-05-16T16:35:45.881Z', // iso
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZzT-56KLN4hetoz9TLOs2s202ex0wEC6IMg&usqp=CAU', 
+    added_datetime: '2022-05-16T16:35:45.881Z',
     upvotes: 0,
     downvotes: 0,
   },
   {
     uuid: '5f0456c6-d54d-11ec-9d64-0242ac120002',
-    title: 'Deploy', // title
+    title: 'Deploy', 
     mem_image:
       'https://media.makeameme.org/created/deploy-on-a.jpg',
     added_datetime: '2022-05-16T06:54:45.881Z',

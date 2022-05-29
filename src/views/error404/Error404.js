@@ -5,13 +5,13 @@ import Typography from '@material-ui/core/Typography';
 import { Wrapper } from './Error404.styled';
 
 const Error404 = () => {
-  // I. Create Data
+  // Data
   const [state, setState] = useState({
     redirect: false,
     stopWatch: 5,
   });
   const { redirect, stopWatch } = state;
-  // II. Handle StopWatch Logic
+  // StopWatch Logic
   useEffect(() => {
     const intervalId = setInterval(() => {
       if (stopWatch === 0) {
@@ -25,7 +25,7 @@ const Error404 = () => {
     };
   }, [stopWatch]);
 
-  // III. Create Error 404 View
+  // Error 404 View
   const StaredView = (
     <Wrapper>
       <Loader type='TailSpin' color='#00BFFF' height={80} width={80} />
@@ -35,7 +35,7 @@ const Error404 = () => {
       </Typography>
     </Wrapper>
   );
-  // IV. Return Main Component
+  // Return Main Component
   return <>{redirect ? <Redirect to='/regular' /> : <>{StaredView}</>}</>;
 };
 

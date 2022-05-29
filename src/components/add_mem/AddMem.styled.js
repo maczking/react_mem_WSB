@@ -1,11 +1,11 @@
-import styled from 'styled-components';
-import IconButton from '@material-ui/core/IconButton';
-import Paper from '@material-ui/core/Paper';
-import Modal from '@material-ui/core/Modal';
-import { makeStyles } from '@material-ui/core/styles';
-import { green } from '@material-ui/core/colors';
+import styled from "styled-components";
+import IconButton from "@material-ui/core/IconButton";
+import Paper from "@material-ui/core/Paper";
+import Modal from "@material-ui/core/Modal";
+import { makeStyles } from "@material-ui/core/styles";
+import { green } from "@material-ui/core/colors";
 
-// I. For Main Component
+// I. Main
 export const StyledIconButton = styled(IconButton)`
   position: fixed;
   right: 48px;
@@ -15,7 +15,7 @@ export const StyledIconButton = styled(IconButton)`
   height: 112px;
   width: 112px;
   &:hover {
-    background-color: #00CED1;
+    background-color: #00ced1;
   }
   @media (max-width: 768px) {
     bottom: 16px;
@@ -38,7 +38,7 @@ export const StyledModal = styled(Modal)`
   position: relative;
 `;
 
-// II. For Forms
+// II. Form
 export const StyledPaper = styled(Paper)`
   width: 100%;
   max-width: 400px;
@@ -48,18 +48,18 @@ export const StyledPaper = styled(Paper)`
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: #FFFAFA;
+  background-color: #fffafa;
 `;
 export const useFormStyles = makeStyles(() => ({
   form: {
-    display: 'flex',
-    flexDirection: 'column',
-    '& div p': {
-      maxHeight: '0px',
-      marginTop: '0px',
+    display: "flex",
+    flexDirection: "column",
+    "& div p": {
+      maxHeight: "0px",
+      marginTop: "0px",
     },
   },
   button: {
-    marginTop: '16px',
+    marginTop: "16px",
   },
 }));

@@ -5,11 +5,11 @@ import { StyledMain } from "./MainView.styled";
 import { MyCard } from "components";
 
 const MainView = () => {
-  // I. Get & Create Data
+  //  Get and Create Data
   const { pathname } = useLocation();
   const mems_data = useSelector((state) => state.memReducer);
   const [state, setState] = useState([]);
-  // II. Filter Fake DB
+  // Filter Fake DB
   const getData = useCallback(
     (data) => {
       switch (pathname) {
@@ -27,12 +27,12 @@ const MainView = () => {
     },
     [pathname]
   );
-  // III. Mount Get Data Func
+  // Mount Get Data Func
   useEffect(() => {
     const results = getData(mems_data);
     setState(results);
   }, [getData, mems_data]);
-  // IV. Return Main Component
+  // Return Main Component
   return (
     <StyledMain>
       {state.map((mem_data) => {
