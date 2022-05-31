@@ -7,8 +7,6 @@
 - redux
 - redux-thunk
 
-[Repo](https://github.com/maczking/react_mem_WSB)
-
 ---
 
 > Usage
