@@ -8,14 +8,14 @@ import { green } from "@material-ui/core/colors";
 // I. Main
 export const StyledIconButton = styled(IconButton)`
   position: fixed;
-  right: 48px;
-  bottom: 48px;
+  right: 45px;
+  bottom: 45px;
   background-color: #ffd740;
   color: #171a1e;
-  height: 112px;
-  width: 112px;
+  height: 100px;
+  width: 100px;
   &:hover {
-    background-color: #00ced1;
+    background-color: #30c3c3;
   }
   @media (max-width: 768px) {
     bottom: 16px;
@@ -25,7 +25,7 @@ export const StyledIconButton = styled(IconButton)`
   }
   svg {
     height: 96px;
-    width: 96px;
+    width: 110px;
     @media (max-width: 768px) {
       height: 56px;
       width: 56px;
@@ -42,7 +42,7 @@ export const StyledModal = styled(Modal)`
 export const StyledPaper = styled(Paper)`
   width: 100%;
   max-width: 400px;
-  padding: 36px;
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -60,6 +60,6 @@ export const useFormStyles = makeStyles(() => ({
     },
   },
   button: {
-    marginTop: "16px",
+    marginTop: "18px",
   },
 }));

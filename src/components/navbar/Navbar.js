@@ -12,7 +12,6 @@ import SentimentSatisfiedAltIcon from "@material-ui/icons/SentimentSatisfiedAlt"
 import WhatshotSharpIcon from "@material-ui/icons/WhatshotSharp";
 import { NavLink as RouterLink } from "react-router-dom";
 import { useStyles } from "./Navbar.styled";
-import { SentimentSatisfiedAlt, WhatshotSharp } from "@material-ui/icons";
 
 //Routes
 const routes = [
@@ -64,7 +63,7 @@ const Navbar = () => {
   const Logo = (
     <Typography
       {...{
-        variant: "h6",
+        variant: "h5",
         component: RouterLink,
         to: "/regular",
         color: "inherit",

@@ -1,5 +1,5 @@
 // AddVote
-export const AddVote = (uuid) => (dispatch) => {
+export const UpVote = (uuid) => (dispatch) => {
   dispatch({
     type: "VOTE_MEM",
     payload: {
